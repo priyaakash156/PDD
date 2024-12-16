@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orders</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    
+
+    .title {
+      font-size: 1.5em;
+      text-align: left;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    .search-bar input {
+      flex-grow: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .search-button {
+      background-color: transparent;
+      color: #8a4af3;
+      border: none;
+      font-size: 1.5em;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    .filter-button {
+      background-color: transparent;
+      color: #8a4af3;
+      border: none;
+      font-size: 1em;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    .orders-list {
+      display: grid;
+      grid-template-columns: 1fr 1px 1fr;
+      gap: 0;
+      align-items: center;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .order-item {
+      display: flex;
+      align-items: center;
+      padding: 20px 0;
+      gap: 20px;
+    }
+
+    .order-info {
+      text-align: left;
+      font-size: 0.9em;
+    }
+
+    .order-image {
+      width: 100px;
+      height: auto;
+      border-right: 1px solid #ccc;
+    }
+
+    .vertical-line {
+      width: 1px;
+      background-color: #ccc;
+      height: 100%;
+    }
+
+    .horizontal-line {
+      grid-column: 1 / span 3;
+      height: 1px;
+      background-color: #ccc;
+    }
+
+    .no-more-orders {
+      text-align: center;
+      padding: 20px;
+      color: #999;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="orders-container">
+    <h2 class="title">My Orders</h2>
+    <div class="search-bar">
+      <input type="text" placeholder="Search your order here">
+      <button class="search-button">&#128269;</button>
+      <button class="filter-button">Filters</button>
+    </div>
+
+    <div class="orders-list">
+      <!-- First Row -->
+      <div class="order-item">
+        <img class="order-image" src="C:\Users\DELL agri\Pictures\Screenshots\Screenshot 2024-11-07 215729.png" alt="Mixer">
+        <div class="order-info">
+          <p>Bidding starting: ₹3,000</p>
+          <p>Start date: 11/04/2025</p>
+          <p>Time: 11 am</p>
+        </div>
+      </div>
+      <div class="vertical-line"></div>
+      <div class="order-item">
+        <img class="order-image" src="C:\Users\DELL agri\Pictures\Screenshots\Screenshot 2024-11-07 220523.png" alt="Air Conditioner">
+        <div class="order-info">
+          <p>Bidding starting: ₹40,000</p>
+          <p>Start date: 01/04/2025</p>
+          <p>Time: 11 am</p>
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+
+      <!-- Second Row -->
+      <div class="order-item">
+        <img class="order-image" src="C:\Users\DELL agri\Pictures\Screenshots\Screenshot 2024-11-07 140642.png"" alt="Refrigerator">
+        <div class="order-info">
+          <p>Bidding starting: ₹40,000</p>
+          <p>Start date: 10/04/2025</p>
+          <p>Time: 8 am</p>
+        </div>
+      </div>
+      <div class="vertical-line"></div>
+      <div class="order-item">
+        <img class="order-image" src="C:\Users\DELL agri\Pictures\Screenshots\Screenshot 2024-11-07 215825.png" alt="Stove">
+        <div class="order-info">
+          <p>Bidding starting: ₹40,000</p>
+          <p>Start date: 12/04/2025</p>
+          <p>Time: 11 am</p>
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+
+      <!-- Third Row -->
+      <div class="order-item">
+        <img class="order-image" src="C:\Users\DELL agri\Pictures\Screenshots\Screenshot 2024-11-07 215825.png" alt="Fan">
+        <div class="order-info">
+          <p>Bidding starting: ₹6,000</p>
+          <p>Start date: 17/04/2025</p>
+          <p>Time: 11 am</p>
+        </div>
+      </div>
+      <div class="vertical-line"></div>
+      <div class="order-item">
+        <img class="order-image" src="C:\Users\DELL agri\Pictures\Screenshots\Screenshot 2024-11-07 215812.png" alt="TV">
+        <div class="order-info">
+          <p>Bidding starting: ₹40,000</p>
+          <p>Start date: 19/04/2025</p>
+          <p>Time: 1 pm</p>
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+    </div>
+
+    <div class="no-more-orders">No More Orders</div>
+  </div>
+</body>
+</html>

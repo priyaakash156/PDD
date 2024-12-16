@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            height: 100vh;
+        }
+
+        /* Header Container */
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            width: 100%;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Profile Image */
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Profile Name and Email */
+        .profile-name {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .profile-email {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0 0 0;
+        }
+
+        /* Main Content */
+        .actions-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 30px;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        /* Action Buttons */
+        .action-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .action-button:hover {
+            background-color: #d3d3d3;
+        }
+
+        .action-button img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .actions-container {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .action-button {
+                font-size: 14px;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section with Profile Picture, Name, and Email -->
+    <div class="header-container">
+        <div class="profile-image">
+            <img src="C:/Users/DELL agri/Pictures/Screenshots/image 2.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-name">John</div>
+        <div class="profile-email">john123@gmail.com</div>
+    </div>
+
+    <!-- Action Buttons Section -->
+    <div class="actions-container">
+        <div class="action-button">
+            <img src="C:/Users/DELL agri/Pictures/Screenshots/ordersymbol.png" alt="Orders Icon"> Orders
+        </div>
+        <div class="action-button">
+            <img src="C:/Users/DELL agri/Pictures/Screenshots/listsymbol.png" alt="Lists Icon"> Lists
+        </div>
+        <div class="action-button">
+            <img src="C:/Users/DELL agri/Pictures/Screenshots/account symbol.png" alt="Details Icon"> Your details
+        </div>
+        <div class="action-button">
+            <img src="C:/Users/DELL agri/Pictures/Screenshots/logout symbol.png" alt="Log Out Icon"> Log Out
+        </div>
+    </div>
+</body>
+</html>

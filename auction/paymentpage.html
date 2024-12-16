@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2Z Auction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 70%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        /* Header */
+        .header {
+            background-color: #d3a4f7;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #000;
+        }
+
+        .header h1 {
+            font-family: 'Arial', sans-serif;
+            color: #c42c94;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .header h1 span {
+            color: red;
+        }
+
+        /* Content layout */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .item-details, .price-details {
+            width: 48%;
+        }
+
+        .item-details img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .item-info {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Price details table */
+        .price-details table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .price-details th, .price-details td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .price-details th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        .price-details td {
+            text-align: right;
+        }
+
+        /* Payment options */
+        .payment-options {
+            margin-top: 20px;
+        }
+
+        .payment-header {
+            background-color: #d3a4f7;
+            color: #000;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 5px 5px 0 0;
+            text-align: center;
+        }
+
+        .payment-methods {
+            border: 1px solid #ccc;
+            border-top: none;
+            padding: 10px;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .payment-method {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .payment-method:last-child {
+            border-bottom: none;
+        }
+
+        .payment-method input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .payment-method label {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .payment-method img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <div class="header">
+        <h1><span>A2Z</span> Auction</h1>
+    </div>
+
+    <!-- Auction Content -->
+    <div class="content">
+        <!-- Item Details -->
+        <div class="item-details">
+            <img src="C:\Users\DELL agri\Pictures\Screenshots\Screenshot 2024-11-09 084538.png" alt="Laptop Image">
+            <div class="item-info">
+                <p>Bidding starting: ₹10,000<br>Start date: 12/04/2025<br>Time: 11 am</p>
+            </div>
+        </div>
+
+        <!-- Price Details -->
+        <div class="price-details">
+            <table>
+                <tr>
+                    <th colspan="2">PRICE DETAILS</th>
+                </tr>
+                <tr>
+                    <td>Bidding amount</td>
+                    <td>₹ 4000</td>
+                </tr>
+                <tr>
+                    <td>Delivery Charges</td>
+                    <td>₹ 120</td>
+                </tr>
+                <tr>
+                    <td><strong>Total payment</strong></td>
+                    <td><strong>₹ 4120</strong></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Payment Options -->
+    <div class="payment-options">
+        <div class="payment-header">Payment options</div>
+        <div class="payment-methods">
+            <div class="payment-method">
+                <input type="radio" name="payment" id="upi">
+                <label for="upi">
+                    <img src="C:\Users\DELL agri\Pictures\Screenshots\upi.png" alt="UPI Icon"> UPI
+                </label>
+            </div>
+            <div class="payment-method">
+                <input type="radio" name="payment" id="wallets">
+                <label for="wallets">
+                    <img src="C:\Users\DELL agri\Pictures\Screenshots\phonepesymbol.png" alt="Wallet Icon"> Wallets
+                </label>
+            </div>
+            <div class="payment-method">
+                <input type="radio" name="payment" id="credit-debit">
+                <label for="credit-debit">
+                    <img src="C:\Users\DELL agri\Pictures\Screenshots\cardsymbol.png" alt="Card Icon"> Credit/debit/ATM cards
+                </label>
+            </div>
+            <div class="payment-method">
+                <input type="radio" name="payment" id="cod">
+                <label for="cod">
+                    <img src="C:\Users\DELL agri\Pictures\Screenshots\cashreceviced.png" alt="Cash Icon"> Cash On Delivery
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
